@@ -6,6 +6,7 @@ __pycache__/
 *.pyc
 
 # django
+properties.json
 db.sqlite3
 
 # PyCharm
