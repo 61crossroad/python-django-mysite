@@ -4,6 +4,7 @@
 # python
 __pycache__/
 *.pyc
+env/
 
 # django
 properties.json
