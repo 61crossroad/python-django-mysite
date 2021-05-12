@@ -45,6 +45,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'books',
     'related_models',
     'person',
     'polls.apps.PollsConfig',
