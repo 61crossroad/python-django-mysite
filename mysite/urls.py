@@ -15,8 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from credit import views as credit_view
+
+extra_patterns = [
+    path('reports/', credit_view.report),
+    path('reports/<int:id>/', credit_view.report),
+    path('charge/', credit_view.charge),
+]
 
 urlpatterns = [
+    path('credit/', include(extra_patterns)),
+    path('blog/', include('blog.urls')),
+    path('articles/', include('articles.urls')),
     path('books/', include('books.urls')),
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
