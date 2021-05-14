@@ -6,7 +6,7 @@ urlpatterns = [
     path('', views.page),
     path('<int:num>/', views.page),
 
-    # TODO resolve <> parameters
+    # TODO resolve <> generic parameters
     # path('<page_slug>-<page_id>', include([
     #     path('history/', views.history),
     #     path('edit/', views.edit),
