@@ -24,6 +24,7 @@ extra_patterns = [
 ]
 
 urlpatterns = [
+    path('app/', include('myapp.urls')),
     path('time/', include('simple_datetime.urls')),
     path('credit/', include(extra_patterns)),
     path('blog/', include('blog.urls')),

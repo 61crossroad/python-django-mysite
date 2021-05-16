@@ -46,12 +46,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'credit',
-    'blog',
-    'articles',
-    'books',
-    'related_models',
-    'person',
+    'books.apps.BooksConfig',
+    'related_models.apps.RelatedModelsConfig',
+    'person.apps.PersonConfig',
     'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
