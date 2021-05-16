@@ -47,7 +47,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'books.apps.BooksConfig',
-    'related_models.apps.RelatedModelsConfig',
+    'relations.apps.RelatedModelsConfig',
     'person.apps.PersonConfig',
     'polls.apps.PollsConfig',
     'django.contrib.admin',
